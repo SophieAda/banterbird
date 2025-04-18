@@ -1,6 +1,6 @@
 const username = "admin";
 
-function renderPost(post) {
+function renderPost(post){
     const template = document.getElementById("post-template").content.cloneNode(true);
     template.querySelector(".username").innerText = post.username;
     template.querySelector(".message").innerText = post.message;
@@ -9,14 +9,19 @@ function renderPost(post) {
 
 function submitPost() {
     const message = document.getElementById("postInput").value;
-    console.log("Would post:", message);
+    console.log("would post:", message);
     alert("Tweet submitted (not really yet)");
 }
 
-window.onload = () => {
-    const hardcodedPost = {
-        username: "admin",
-        message: "Welcome to Banterbird! This post is hardcoded.",
-    };
-    renderPost(hardcodedPost);
+window.onload = async () => {
+    try{
+        const response = await fetch("/api/posts");
+        const posts = await response.json();
+        posts.forEach(post => {
+            renderPost(post);
+        });
+    } catch (error){
+        console.error("Error:", error);
+    }
+
 };
