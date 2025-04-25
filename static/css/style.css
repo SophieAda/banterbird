@@ -1,0 +1,72 @@
+body {
+    font-family: 'Comic Neue', cursive, sans-serif;
+    background-color: #ffc4dc00; 
+    color: #fa86c0; 
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#username {
+    color: #ffffff;
+}
+
+textarea#postInput {
+    width: 100%;
+    max-width: 600px;
+    height: 80px;
+    padding: 10px;
+    border: 2px solid #fa86c0;
+    border-radius: 10px;
+    background-color: #fff0f5;
+    color: #fa86c0;
+    font-size: 1em;
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+button:hover {
+    background-color: #ff66b3;
+}
+
+#feed {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.post {
+    background-color: #fff0f5;
+    border: 1px solid #ffccdd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(255, 192, 203, 0.3);
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+
+.username {
+    color: #ff90c8;
+    font-weight: bold;
+}
+
+.timestamp {
+    color: #ffb0ca;
+    font-size: 0.8em;
+}
