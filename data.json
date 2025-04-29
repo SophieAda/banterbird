@@ -1,5 +1,9 @@
 [
     {
+        "username": "bob",
+        "message": ""
+    },
+    {
         "username": "admin",
         "message": "hi"
     },
