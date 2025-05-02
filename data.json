@@ -1,6 +1,10 @@
 [
     {
         "username": "bob",
+        "message": "hi"
+    },
+    {
+        "username": "bob",
         "message": ""
     },
     {
